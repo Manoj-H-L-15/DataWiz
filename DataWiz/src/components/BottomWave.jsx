@@ -1,7 +1,7 @@
 export default function BottomWave() {
   return (
     <svg
-      className="w-full h-64 md:h-80"
+      className="w-full h-64 md:h-96"
       viewBox="0 0 1440 490"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none"
