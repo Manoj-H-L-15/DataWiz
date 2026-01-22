@@ -114,7 +114,7 @@ const LandingPage = () => {
                 </div>
 
                 <div className="relative z-20 flex flex-col mt-10 p-10 rounded-2xl max-w-screen-2xl mx-auto space-y-8 bg-transparent">
-                    <h1 className="ml-3 text-5xl font-semibold text-white">
+                    <h1 className="ml-3 text-center text-5xl font-semibold text-white">
                         Upcoming Events
                     </h1>
                     <div className="flex">
@@ -137,7 +137,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="text-black">
-                    <h1 className="text-5xl font-semibold ml-10 text-white">
+                    <h1 className="text-5xl font-semi   bold ml-10 text-white">
                         Join Our Community
                     </h1>
                     <div className="grid grid-cols-2 gap-20 mx-10 mt-5 mb-10">
