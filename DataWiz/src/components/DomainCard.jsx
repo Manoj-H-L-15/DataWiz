@@ -9,7 +9,7 @@ const DomainCard = ({ data }) => {
     }
     return (
         <div>
-            <div className="text-black grid grid-cols-3 gap-20 items-stretch p-20 shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] rounded-2xl w-full border">
+            <div className="text-black grid grid-cols-3 gap-20 items-stretch p-20 shadow-2xl border rounded-2xl w-full">
                 {
                     data.map((element, index) => {
                         return renderElements(element, index);

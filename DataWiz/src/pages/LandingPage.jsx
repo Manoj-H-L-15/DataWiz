@@ -6,61 +6,67 @@ import Card from "../components/Card";
 import logo from "../assets/logo.jpeg";
 import JourneyCard from "../components/JourneyCard";
 import DomainCard from "../components/DomainCard";
+import CommunityCard from "../components/CommunityCard";
 
 const content = [
     {
-        "title": "Inaugration ceremony and tech talk",
-        "date": "21st March 2025"
+        title: "Inaugration ceremony and tech talk",
+        date: "21st March 2025",
     },
     {
-        "title": "Recruitment Phase -1",
-        "date": " 9th may 2025"
+        title: "Recruitment Phase -1",
+        date: " 9th may 2025",
     },
     {
-        "title": "Event - Global fabric day at Microsoft office Bangalore",
-        "date": "31st may 2025"
+        title: "Event - Global fabric day at Microsoft office Bangalore",
+        date: "31st may 2025",
     },
     {
-        "title": "Event - Odoo x NMIT Hackathon ",
-        "date": "20-21 September 2025"
+        title: "Event - Odoo x NMIT Hackathon ",
+        date: "20-21 September 2025",
     },
     {
-        "title": "Recruitment Phase 2",
-        "date": "13 October 2025"
+        title: "Recruitment Phase 2",
+        date: "13 October 2025",
     },
     {
-        "title": "Orientation program ",
-        "date": "28 October 2025"
+        title: "Orientation program ",
+        date: "28 October 2025",
     },
-    
-]
+];
 
 const domainData = [
     {
-        "title": "Tech",
-        "description": "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration"
+        title: "Tech",
+        description:
+            "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration",
     },
     {
-        "title": "Documentation",
-        "description": "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration"
+        title: "Documentation",
+        description:
+            "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration",
     },
     {
-        "title": "Design",
-        "description": "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration"
+        title: "Design",
+        description:
+            "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration",
     },
     {
-        "title": "Media",
-        "description": "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration"
+        title: "Media",
+        description:
+            "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration",
     },
     {
-        "title": "Public Relation",
-        "description": "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration"
+        title: "Public Relation",
+        description:
+            "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration",
     },
     {
-        "title": "Events",
-        "description": "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration"
-    }
-]
+        title: "Events",
+        description:
+            "Building cutting-edge solutions, organizing workshops, and driving technical excellence through innovation and collaboration",
+    },
+];
 
 const LandingPage = () => {
     return (
@@ -116,17 +122,37 @@ const LandingPage = () => {
                             heading="Odoo x NMIT"
                             content="Experience a day full of innovation, creativity, and collaboration. Join a community of builders to explore ideas, take on exciting challenges, and showcase your skills in an inspiring environment."
                         />
-                        
                     </div>
                 </div>
                 <div className="relative z-20 flex flex-col mt-10 p-10 rounded-2xl max-w-screen-2xl mx-auto space-y-8 bg-transparent">
-                    <h1 className="ml-3 text-5xl font-semibold text-white">Domains</h1>
+                    <h1 className="ml-3 text-5xl font-semibold text-white">
+                        Domains
+                    </h1>
                     <DomainCard data={domainData} />
                 </div>
                 <div className="max-w-7xl mx-auto m-14 text-white flex justify-center items-center space-x-28 shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] p-20 rounded-s-full border">
                     <h1 className="text-4xl font-bold">Our Journey ➨</h1>
                     <div className="shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] p-20 rounded-e-3xl flex flex-col space-y-5 transition-all duration-150 hover:scale-105 border">
-                        <JourneyCard content={content}/>
+                        <JourneyCard content={content} />
+                    </div>
+                </div>
+                <div className="text-black">
+                    <h1 className="text-5xl font-semibold ml-10 text-white">
+                        Join Our Community
+                    </h1>
+                    <div className="grid grid-cols-2 gap-20 mx-10 mt-5 mb-10">
+                        <CommunityCard
+                            heading="Instagram"
+                            content="Stay connected with DataWiz for updates on hackathons, workshops, events, and technical initiatives. Follow us to see what we build, learn, and explore as a community."
+                            button="Follow Us"
+                            url="https://www.instagram.com/datawiz_nmit"
+                        />
+                        <CommunityCard
+                            heading="LinkedIn"
+                            content="Join DataWiz on LinkedIn to stay informed about our technical events, flagship hackathons, workshops, and community initiatives. Follow us for updates, insights, and opportunities to learn and collaborate."
+                            button="Connect With Us"
+                            url="https://www.linkedin.com/company/datawiznmit/"
+                        />
                     </div>
                 </div>
             </main>
