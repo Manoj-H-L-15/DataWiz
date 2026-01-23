@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  color: black;
-  background-image: url('./assets/background3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    color: white;
+    background-image: url("./assets/background11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

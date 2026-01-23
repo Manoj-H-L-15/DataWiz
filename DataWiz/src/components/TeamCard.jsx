@@ -1,0 +1,47 @@
+import logo from "../assets/logo.jpeg";
+
+const TeamCard = () => {
+    const leaders = [
+        {
+            image: logo,
+            name: "XYZ",
+            description: "Club Head",
+        },
+        {
+            image: logo,
+            name: "XYZ",
+            description: "Club Co-Head",
+        },
+        {
+            image: logo,
+            name: "XYZ",
+            description: "General Secretary",
+        },
+    ];
+
+    return (
+        <div className="grid grid-cols-3 min-h-40 mt-10 mx-10 text-white">
+            {leaders.map((element, index) => {
+                return (
+                    <div className="flex flex-col items-center justify-between m-7 p-8 gap-y-10 shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] hover:scale-110 transition-all duration-300 hover:shadow-[0_8px_30px_rgba(255,255,255,0.2)] rounded-3xl">
+                        <img
+                            className="size-56 rounded-full"
+                            src={element.image}
+                            alt="Photo"
+                        />
+                        <div className="w-full flex flex-col items-center">
+                            <h1 className="text-3xl font-bold">
+                                {element.name}
+                            </h1>
+                            <h1 className="text-2xl font-semibold">
+                                {element.description}
+                            </h1>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
+
+export default TeamCard;

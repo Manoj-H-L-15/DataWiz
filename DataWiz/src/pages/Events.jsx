@@ -61,10 +61,10 @@ const data = [
 
 const Events = () => {
     return (
-        <div>
+        <div className="">
             <Header />
             <div className="max-w-5xl mx-auto text-center pt-24 p-6">
-                <h1 className="text-white text-5xl font-thin">Events</h1>
+                <h1 className="text-white text-5xl font-bold">Events</h1>
                 <p className="mt-4 text-gray-500 text-2xl italic">Hackathons, workshops, and technical initiatives by DataWiz</p>
             </div>
             <div className="m-4 p-10 shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] rounded-3xl ">

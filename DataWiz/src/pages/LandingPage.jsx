@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Wave from "../components/wave";
 import Card from "../components/Card";
 import logo from "../assets/logo.jpeg";
+import group_photo from "../assets/group_photo.jpg";
 import JourneyCard from "../components/JourneyCard";
 import DomainCard from "../components/DomainCard";
 import CommunityCard from "../components/CommunityCard";
@@ -78,7 +79,7 @@ const LandingPage = () => {
             <main className="mx-auto">
                 <div className="max-w-7xl mx-auto pt-32 p-10 flex flex-col space-y-7 z-0">
                     <h1 className="text-white text-7xl font-black">
-                        DATAWIZ <span className="text-blue-600">FAMILY</span>
+                        <span className="">DATAWIZ <span className="text-blue-600">FAMILY</span></span>
                     </h1>
                     <div className="">
                         <img
@@ -108,11 +109,17 @@ const LandingPage = () => {
                     </div>
                     <div className="flex flex-col mx-auto space-y-5">
                         <Button button_name="Events" path="events" />
-                        <Button button_name="Team" />
+                        <Button button_name="Team" path="Teams"/>
                         <Button button_name="Gallery" />
                     </div>
                 </div>
-
+                <div className="m-10 max-w-7xl mx-auto flex items-center justify-center shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)]">
+                    <img
+                        className="size-2/3 m-10 rounded-e-3xl"
+                        src={group_photo}
+                        alt="Group photo"
+                    />
+                </div>
                 <div className="relative z-20 flex flex-col mt-10 p-10 rounded-2xl max-w-screen-2xl mx-auto space-y-8 bg-transparent">
                     <h1 className="ml-3 text-center text-5xl font-semibold text-white">
                         Upcoming Events
@@ -130,14 +137,14 @@ const LandingPage = () => {
                     </h1>
                     <DomainCard data={domainData} />
                 </div>
-                <div className="max-w-7xl mx-auto m-14 text-white flex justify-center items-center space-x-28 shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] p-20 rounded-s-full border">
-                    <h1 className="text-4xl font-bold">Our Journey ➨</h1>
-                    <div className="shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)] p-20 rounded-e-3xl flex flex-col space-y-5 transition-all duration-150 hover:scale-105 border">
+                <div className="max-w-7xl mx-auto m-14 text-white flex justify-center items-center space-x-28 shadow-[0_8px_30px_rgba(255,255,255,0.2)] p-20 rounded-s-full">
+                    <h1 className="text-6xl font-bold">Our Journey ➨</h1>
+                    <div className="shadow-[0_8px_30px_rgba(255,255,255,0.2)] p-20 rounded-e-3xl flex flex-col space-y-5 transition-all duration-150 hover:scale-105">
                         <JourneyCard content={content} />
                     </div>
                 </div>
                 <div className="text-black">
-                    <h1 className="text-5xl font-semi   bold ml-10 text-white">
+                    <h1 className="text-4xl text-center font-bold ml-10 text-white">
                         Join Our Community
                     </h1>
                     <div className="grid grid-cols-2 gap-20 mx-10 mt-5 mb-10">
