@@ -6,15 +6,15 @@ export default function App() {
     const CustomRoutehandler = () => {
         const routes = useRoutes([
             {
-                path: "/home",
+                path: "/",
                 element: <LandingPage />,
             },
             {
-                path: "/home/events",
+                path: "/events",
                 element: <Events />,
             },
             {
-                path: "/home/Teams",
+                path: "/Teams",
                 element: <Teams />
             }
         ]);

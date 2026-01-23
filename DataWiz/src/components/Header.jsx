@@ -12,9 +12,9 @@ const Header = () => {
             </div>
 
             <div className="flex space-x-9 font-semibold lg:opacity-100 opacity-0">
-                <button className="transition-all duration-150 rounded-2xl hover:border-4 ease-in-out hover:border-white px-4" onClick={() => {navigate('/home')}}>Home</button>
-                <button className="transition-all ease-in-out duration-150 rounded-2xl hover:border-4 hover:border-white px-4" onClick={() => {navigate('/home/Teams')}}>About Us</button>
-                <button className="transition-all ease-in-out duration-150 rounded-2xl hover:border-4 hover:border-white px-4" onClick={() => {navigate('/home/events')}}>Events</button>
+                <button className="transition-all duration-150 rounded-2xl hover:border-4 ease-in-out hover:border-white px-4" onClick={() => {navigate('/')}}>Home</button>
+                <button className="transition-all ease-in-out duration-150 rounded-2xl hover:border-4 hover:border-white px-4" onClick={() => {navigate('/Teams')}}>About Us</button>
+                <button className="transition-all ease-in-out duration-150 rounded-2xl hover:border-4 hover:border-white px-4" onClick={() => {navigate('/events')}}>Events</button>
             </div>
         </div>
     );
