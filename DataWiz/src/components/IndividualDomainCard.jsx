@@ -18,7 +18,7 @@ const IndividualDomainCard = ({ heading, data }) => {
     };
 
     return (
-        <div className="grid grid-cols-4 mt-6 gap-y-10 gap-x-8 mb-20">
+        <div className="grid lg:grid-cols-4 lg:grid-rows-none grid-cols-1 mt-6 gap-y-10 gap-x-8 mb-20">
             {data.map((element, index) => {
                 return renderElements(element);
             })}
