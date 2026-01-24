@@ -36,7 +36,141 @@ const tech_data = [
         name: "Tech 6",
         description: "Member",
     },
+]
+
+const design_data = [
+    {
+        image: logo,
+        name: "Design 1",
+        description: "Lead",
+    },
+    {
+        image: logo,
+        name: "Design 2",
+        description: "Co-Lead",
+    },
+    {
+        image: logo,
+        name: "Design 3",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Design 4",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Design 5",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Design 6",
+        description: "Member",
+    },
 ];
+
+const PR_data = [
+    {
+        image: logo,
+        name: "PR 1",
+        description: "Lead",
+    },
+    {
+        image: logo,
+        name: "PR 2",
+        description: "Co-Lead",
+    },
+    {
+        image: logo,
+        name: "PR 3",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "PR 4",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "PR 5",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "PR 6",
+        description: "Member",
+    },
+];
+
+const media_data = [
+    {
+        image: logo,
+        name: "Media 1",
+        description: "Lead",
+    },
+    {
+        image: logo,
+        name: "Media 2",
+        description: "Co-Lead",
+    },
+    {
+        image: logo,
+        name: "Media 3",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Media Tech 4",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Media 5",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Media 6",
+        description: "Member",
+    },
+];
+
+const events_data = [
+    {
+        image: logo,
+        name: "Events 1",
+        description: "Lead",
+    },
+    {
+        image: logo,
+        name: "Events 2",
+        description: "Co-Lead",
+    },
+    {
+        image: logo,
+        name: "Events 3",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Events 4",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Events 5",
+        description: "Member",
+    },
+    {
+        image: logo,
+        name: "Events 6",
+        description: "Member",
+    },
+];
+
+
 
 const Teams = () => {
     const [domain, setDomain] = useState('Tech');
@@ -51,15 +185,15 @@ const Teams = () => {
                 )
             case 'Design':
                 return (
-                    <IndividualDomainCard heading="Tech" data={tech_data} />
+                    <IndividualDomainCard heading="Tech" data={design_data} />
                 ) 
             case 'Media':
                 return (
-                    <IndividualDomainCard heading="Tech" data={tech_data} />
+                    <IndividualDomainCard heading="Tech" data={media_data} />
                 ) 
             case 'PR':
                 return (
-                    <IndividualDomainCard heading="Tech" data={tech_data} />
+                    <IndividualDomainCard heading="Tech" data={PR_data} />
                 ) 
             case 'Documentation':
                 return (
@@ -67,7 +201,7 @@ const Teams = () => {
                 )              
             case 'Events':
                 return (
-                    <IndividualDomainCard heading="Tech" data={tech_data} />
+                    <IndividualDomainCard heading="Tech" data={events_data} />
                 )       
         }
     }
