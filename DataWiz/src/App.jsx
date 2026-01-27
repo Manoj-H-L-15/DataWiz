@@ -1,5 +1,6 @@
 import Events from "./pages/Events";
 import LandingPage from "./pages/LandingPage";
+import NotFound from "./pages/NotFound";
 import Teams from "./pages/Teams";
 import { Router, useRoutes } from "react-router-dom";
 export default function App() {
@@ -17,6 +18,10 @@ export default function App() {
                 path: "/Teams",
                 element: <Teams />
             },
+            {
+                path: "*",
+                element: <NotFound />
+            }
         ]);
 
         return routes;
