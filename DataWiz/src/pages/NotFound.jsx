@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
+import '../components/animation/style.css'
 
 const NotFound = () => {
     const navigate = useNavigate();
     return (
         <div className=" text-white">
             <Header />
-            <div className="lg:max-w-5xl max-w-sm mx-auto text-center py-52 flex flex-col gap-y-5">
+            <div id="notFound" className="lg:max-w-5xl max-w-sm mx-auto text-center py-52 flex flex-col gap-y-5">
                 <h1 className="text-7xl font-black text-white">Oops!</h1>
                 <p className="text-xl font-bold">404 - Page Not Found</p>
                 <div className="lg:max-w-md max-w-xs mx-auto">
