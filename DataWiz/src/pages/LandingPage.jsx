@@ -78,16 +78,16 @@ const LandingPage = () => {
             </div> */}
             <Header />
             <main className="mx-auto lg:max-w-7xl">
-                <div className="max-w-7xl mx-auto pt-40 p-10 flex flex-col space-y-7 z-0">
+                <div className="max-w-7xl mx-auto pt-40 p-10 flex flex-col space-y-7 z-0 items-center lg:items-start">
                     <div>
-                        <h1 className="text-white text-5xl lg:text-7xl font-black">
+                        <h1 className="text-white text-5xl lg:text-7xl font-black lg:text-start text-center">
                             <span className="">
                                 DATAWIZ{" "}
                                 <span className="text-[#c3c0da]">FAMILY</span>
                             </span>
                         </h1>
                         <img
-                            className="size-1/3"
+                            className="size-1/3 lg:mx-0 mx-auto"
                             src={underline}
                             alt="underline"
                         />
@@ -95,7 +95,7 @@ const LandingPage = () => {
 
                     <div className="">
                         <img
-                            className="max-w-40 mt-2 rounded-full "
+                            className="max-w-40 mt-2 rounded-full"
                             src={logo}
                             alt="logo"
                         />
