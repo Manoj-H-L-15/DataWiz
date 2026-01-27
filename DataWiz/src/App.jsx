@@ -16,7 +16,7 @@ export default function App() {
             {
                 path: "/Teams",
                 element: <Teams />
-            }
+            },
         ]);
 
         return routes;

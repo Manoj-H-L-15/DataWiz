@@ -72,7 +72,7 @@ const domainData = [
 
 const LandingPage = () => {
     return (
-        <div className="relative min-h-screen">
+        <div id="teamsPage" className="relative min-h-screen">
             {/* <div className="mb-24 z-10">
                 <Wave />
             </div> */}
@@ -132,7 +132,7 @@ const LandingPage = () => {
                         alt="Group photo"
                     />
                 </div>
-                <div className="relative z-20 flex flex-col mt-10 p-10 rounded-2xl max-w-screen-2xl mx-auto space-y-8 bg-transparent">
+                <div className="relative flex flex-col mt-10 p-10 rounded-2xl max-w-screen-2xl mx-auto space-y-8 bg-transparent">
                     <h1 className="ml-3 text-center text-5xl font-semibold text-white">
                         Upcoming Events
                     </h1>

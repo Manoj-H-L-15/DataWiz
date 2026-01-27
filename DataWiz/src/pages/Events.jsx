@@ -61,7 +61,7 @@ const data = [
 
 const Events = () => {
     return (
-        <div className="">
+        <div id="teamsPage" className="">
             <Header />
             <div className="max-w-5xl mx-auto text-center pt-32 p-6">
                 <h1 className="text-white text-5xl font-bold">Events</h1>
