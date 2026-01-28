@@ -9,6 +9,8 @@ import { MyContext } from "./context/LoadingContext";
 export default function App() {
     const {loading, setLoading} = useContext(MyContext)
     const { button, path } = loading;
+    console.log(`Button : ${button} Path : ${path}`);
+    
     const CustomRoutehandler = () => {
         const routes = useRoutes([
             {
@@ -35,7 +37,7 @@ export default function App() {
 
         return routes;
     };
-
+    
     return (
         <div>
             {
