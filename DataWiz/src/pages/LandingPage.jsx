@@ -85,8 +85,8 @@ const LandingPage = () => {
             <main className="mx-auto lg:max-w-7xl">
                 <div className="max-w-7xl mx-auto pt-40 p-10 flex flex-col space-y-7 z-0 items-center lg:items-start">
                     <div>
-                        <h1 id="core-members" className="text-white text-5xl lg:text-7xl font-black lg:text-start text-center">
-                            <span className="">
+                        <h1 id="core-members" className="text-white text-5xl lg:text-7xl font-black lg:text-start text-center ">
+                            <span className="shadow-[24px_12px_48px_rgba(1.5,0,0,0.7)]">
                                 DATAWIZ{" "}
                                 <span className="text-[#c3c0da]">FAMILY</span>
                             </span>
